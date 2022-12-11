@@ -1,0 +1,404 @@
+
+body,h1,h2,h3,h5,h4{
+    margin:0;
+}
+body{
+    font-family: sans-serif;
+}
+   .carousel-caption{
+    transform: translateY(-50%);
+    bottom: initial;
+    top:50%;
+    
+
+    
+   }
+   .carousel-caption > h1{
+    color: #ffff;
+    width:100%;
+    font-size: 60px;
+    margin: 0px 0 10px;
+ 
+   }
+   @media screen and(max-width:990px){
+    .carousel-caption > h1{
+        width:100%;
+    }
+   }
+
+
+   .carousel-item {
+    min-height: 80vh;
+    z-index: 1;
+    position: relative;
+   
+    width: 100%;
+    margin-top: 54px;
+    background-position: center;
+    background-size: cover;
+    } 
+
+
+.carousel-item::before{
+     content:"";
+     display: block;
+ position: absolute;
+ top:0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background: linear-gradient( 0deg, rgba(235, 187, 176,0.8) 0%, rgba(235, 187, 176,0.8) );}
+ 
+    
+ .w-100{
+        height: 80vh;
+       }
+  
+   
+  
+   @media screen and ( max-width:700px){
+    .carousel-caption{
+        bottom: 125px;;
+    }
+
+
+
+   }
+   
+   .navvbar {
+    background-color:  #ffffff;
+    
+    width: 100%;
+    height:70px;
+   position: relative;
+      top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    color: rgb(60, 51, 51) ;
+
+   
+    position: fixed;
+    z-index: 8;
+}  
+ul :hover {
+    color: wheat;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.navv-title :hover{
+    text-decoration: underline;
+    color: wheat;
+}
+ .navvbar > i {
+     display:none;
+
+}
+.mobile-navv{
+    position:absolute;
+      top:60px;
+      left:0;
+      height:0;
+      width: 100%;
+      background-color:white;
+      transition: var(--animation-time);
+      list-style: none;
+      display: none;
+      flex-direction: column;
+      justify-content:center;
+      gap: 20px;
+      z-index: 20;
+      animation-name: slideBottom;
+      animation-duration: 2s;
+      animation-fill-mode: forwards;
+}
+@keyframes slideBottom {
+    from {
+        height:0px;
+    }
+    to {
+        height:calc(100vh - (40px));
+    }
+}
+.mobile-navv li{
+    font-size:30px;
+}
+.openn{
+    display:flex;
+   }
+.closse{
+    display:none;
+}
+
+@media screen and (max-width: 700px)  {
+    .navvbar > i {
+      display: block;
+    }
+    i:hover{
+        color: wheat;
+        cursor: pointer;
+    }
+   
+
+    .mobile-navv>ul{
+        color: ;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        justify-content: start;
+        top: 40px;
+
+    }
+    
+   
+   
+   .navv-open{
+   }
+    .navvbar .navv-left {
+        display: none;
+    }
+   .deff{
+    display: flex;
+    flex-direction: column;
+   }
+   
+}
+  
+
+
+ .navv-title{
+    padding: 16px 90px;
+    max-width: 380px;
+    text-decoration: none;
+    font-size: 20px;
+   
+    
+    text-shadow: 1px 1px 1px rgb(0 0 0 / 25%); 
+      }
+ .but{
+   text-align: center;
+   padding: 50px;
+ }
+ 
+ .deff{
+    display: flex;
+   
+    align-items: center;
+    justify-content: space-between;
+    
+    font-size: 50px;
+   
+    padding:    30px 0px;
+   
+ }
+ .navv-left {
+    display: block;
+    display: flex;
+    gap: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 20px;
+    font-size: 20px;
+    text-shadow: 1px 1px 1px rgb(0 0 0 / 25%);
+    list-style: none;
+  }
+ .navv-button{
+    background-color:#D48C70;
+    opacity: 1;
+    width: 80px;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: 0 13px 7px -15px rgb(50 50 93 / 25%), 0 8px 16px -8px rgb(0 0 0 / 30%), 0 -6px 16px -6px rgb(0 0 0 / 3%);
+    
+    height: fit-content;
+ }
+
+ .back { 
+    display: flex;
+    align-items: center;
+   
+    padding: 40px;
+    color: #c6bbba;
+   gap: 10px;
+   font-size: 18px;
+
+    
+}
+.back >h4 :hover{
+    color: rgb(87, 84, 84);
+    cursor: pointer;
+    text-decoration: underline;
+    
+    
+}
+.a{
+   color:#c6bbba; 
+   text-decoration: none ;
+}
+.borrd{
+    background:rgba(230, 226, 226 ,0.3) ;
+    width: 90%;
+    height: 80px;
+    margin-left: 30px;
+    box-sizing: border-box;
+
+    opacity: 0.3s;
+    align-items: center;
+    justify-items: center;
+    
+    gap: 10px;
+    display: flex;
+    color: rgb(141, 135, 135);
+ 
+  
+}
+.tt{
+    padding: 20px;
+    color: rgb(141, 135, 135);
+    
+}
+.tt:hover{cursor: pointer;
+    color: black;
+
+}
+
+.imgg1{
+    background-image: url(https://tse3.mm.bing.net/th?id=OIP.PCOwanl8YCgBdOjQ0z2Y1gHaHa&pid=Api&P=0);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 400px;
+    height: 300px;
+
+}
+.carrd:hover{
+    cursor: pointer;
+}
+.imgg2{
+    background-image: url(https://tse3.mm.bing.net/th?id=OIP.ZSdPOE3A_GMH9eY-dqJkkwHaHa&pid=Api&P=0);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 400px;
+    height: 300px;
+
+}
+.desc{
+    text-align: center;
+    padding: 20px;
+}
+.imgg3{ background-image: url(https://tse2.mm.bing.net/th?id=OIP.hK_uNsdjOKnZ7j8M0Z8bGAHaFj&pid=Api&P=0);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 400px;
+    height: 300px;
+
+}
+.imgg4{ background-image: url(https://tse4.mm.bing.net/th?id=OIP.wQB-fZ3vkH3bI91GOqV9YQHaHa&pid=Api&P=0);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 400px;
+    height: 300px;
+
+}
+.imgg5{ background-image: url(https://tse3.mm.bing.net/th?id=OIP.fHbNddMWXKSLXPhnAUvJlwHaE_&pid=Api&P=0);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 400px;
+    height: 300px;
+
+}
+.imgg6{ background-image: url(https://static.fnac-static.com/multimedia/Images/E0/E0/47/EB/15419360-1505-1540-1/tsp20210624153804/LARS-Table-bae-design-moderne-salon-sejour-100x60x42-cm-Blanc.jpg#592beafb-2f19-49fc-9e8d-d271c5c4af77);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 400px;
+    height: 300px;
+
+}
+.imgg7{ background-image: url(https://danielhechterhome.com/media/catalog/product/cache/96ebaa1db3f974b50ad473c4e34714d0/i/m/img-00967.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 400px;
+    height: 300px;
+
+}
+.imgg8{ background-image: url(https://www.meubles-delmas.com/assets/images/produits/large/canape-convertible-3-places-pack-standard-nicaragua-tissu-belfast-corail-36-rose-5907690917234.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 400px;
+    height: 300px;
+}
+.imgg9{ background-image: url(https://tse4.mm.bing.net/th?id=OIP.7zyZg8TEb2Bcf8kuy0U5dQHaEx&pid=Api&P=0);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 400px;
+    height: 300px;
+}
+.grrid{
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    gap: 20px;
+   
+    padding: 30px;
+}  
+@media screen and (max-width: 1270px) {
+    .grrid{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+}
+@media screen and (max-width: 837px){
+    .foooter{
+        height: 100vh !important;
+    }} 
+.foooter{
+    background-color:#D48C70;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    height: 40vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    gap: 20px;
+    color: #ffffff;
+    padding: 80px 0px;
+    margin-top: 30px;
+    
+   
+ }
+ .partt1 > li{
+list-style: none;
+font-size: 20px;
+line-height: 1.5;
+padding: 0px 16px;
+ }
+ .partt2 > li{
+    list-style: none;
+    font-size: 20px;
+    line-height: 1.5;
+    padding: 0px 16px;
+     }
+     .partt3 > li{
+        list-style: none;
+        font-size: 20px;
+        line-height: 1.5;
+        padding: 0px 16px;
+         }
+.ancien {
+    width: 400px;
+    height: 300px;
+}
+.carrd:hover {
+    cursor: pointer;
+    transform: scale(1.09);
+}

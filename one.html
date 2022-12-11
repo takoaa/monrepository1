@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/css.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/3c04ae0692.js" crossorigin="anonymous"></script>
+    <title>Bootstrap Example</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="navvbar">
+        <i style="font-size:27px; padding: 20px; " onclick="openclose()" class="fa-solid fa-bars"> </i>
+
+        <div class="navv-title">
+            <h1> <a style="color:rgb(60, 51, 51)  ; text-decoration: none ;"
+                    href="file:///C:/Users/hedhl/OneDrive/Desktop/final%20project/projet.html">Free Home </a> </h1>
+        </div>
+
+
+        <ul class=" navv-left ">
+            <li> Séjour</li>
+            <li> Chambre</li>
+            <li> Ancien meubles </li>
+
+
+            <li style="font-size: 25px;" class=" navv-button">
+                Home
+
+
+            </li>
+
+        </ul>
+        <ul class="mobile-navv">
+
+            <li style="color:rgb(60, 51, 51) ;font-size: 50px;""> séjour</li>
+            <li style=" color:rgb(60, 51, 51) ;font-size: 50px;"> chambre</li>
+            <li style="color:rgb(60, 51, 51) ;font-size: 50px; "> Ancien meubles</li>
+
+
+            <li style="font-size: 30px;" class=" navv-button"><a style="color:rgb(60, 51, 51)"
+                    href="file:///C:/Users/hedhl/OneDrive/Desktop/final%20project/projet.html">
+                    Home</a>
+            </li>
+        </ul>
+
+    </section>
+    <div class="m-0 border-0 bd-example">
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner ">
+                <div class="carousel-item active">
+                    <img src="./modifier.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption">
+                        <h1> Free Home vous présente</h1>
+                        <h1> Séjour </h1>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="./lit-adulte-gris-140x200-cm.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption">
+                        <h1> Free Home vous présente</h1>
+                        <h1> Chambre </h1>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.monsieur-meuble.com/wp-content/uploads/2021/03/Monterey_salle_a_manger_ambiance-1536x770.jpg"
+                        class="d-block w-100" alt="...">
+                    <div class="carousel-caption">
+                        <h1> Free Home vous présente</h1>
+                        <h1> Salle à manger</h1>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="back">
+            <h4> <a class="a" href="file:///C:/Users/hedhl/OneDrive/Desktop/final%20project/projet.html">Accueil </a>
+            </h4>
+            <i class="fa-solid fa-angle-right"></i>
+            <h4>Éléments</h4>
+        </div>
+        <section>
+            <div class="borrd">
+                <h1 onclick="opengroupe1()" class="tt"> Séjour</h1>
+                <i class="fa-solid fa-down-long"></i>
+
+            </div>
+            <div class=" closse groupe1">
+                <div class="carrd">
+
+                    <div class="imgg1"></div>
+                    <div class="desc">
+                        <h2> Lampe</h2>
+                        <p style="color:rgb(133, 124, 124);"> 20 DT</p>
+
+                    </div>
+                </div>
+
+                <div class="carrd">
+
+                    <div class="imgg2"></div>
+                    <div class="desc">
+                        <h2> Abat jour </h2>
+                        <p style="color:rgb(133, 124, 124);"> 50DT</p>
+                    </div>
+                </div>
+                <div class="carrd">
+
+                    <div class="imgg3"></div>
+                    <div class="desc">
+
+                        <h2>Fauteuil </h2>
+                        <p style="color:rgb(133, 124, 124);"> 200 DT</p>
+                    </div>
+
+                </div>
+                <div class="carrd">
+
+                    <div class="imgg4"></div>
+                    <div class="desc">
+                        <h2> Buffet</h2>
+                        <p style="color:rgb(133, 124, 124);"> 150 DT</p>
+                    </div>
+                </div>
+                <div class="carrd">
+
+                    <div class="imgg5"></div>
+                    <div class="desc">
+                        <h2> Buffet Blanc</h2>
+                        <p style="color:rgb(133, 124, 124);">150 DT</p>
+                    </div>
+                </div>
+                <div class="carrd">
+
+                    <div class="imgg6"></div>
+                    <div class="desc">
+                        <h2> Table De basse</h2>
+                        <p style="color:rgb(133, 124, 124);"> 100 DT</p>
+                    </div>
+
+                </div>
+                <div class="carrd">
+
+                    <div class="imgg7"></div>
+                    <div class="desc">
+                        <h2> Canapé</h2>
+                        <p style="color:rgb(133, 124, 124);"> 300 DT</p>
+                    </div>
+
+                </div>
+                <div class="carrd">
+
+                    <div class="imgg8"></div>
+                    <div class="desc">
+                        <h2> Canapé</h2>
+                        <p style="color:rgb(133, 124, 124);"> 300 DT</p>
+                    </div>
+
+                </div>
+                <div class="carrd">
+
+                    <div class="imgg9"></div>
+                    <div class="desc">
+                        <h2> Canapé</h2>
+                        <p style="color:rgb(133, 124, 124);"> 300 DT</p>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </section>
+        <section>
+            <div class="borrd">
+                <h1 onclick="opengroupe2()" class="tt">Chambre</h1>
+                <i class="fa-solid fa-down-long"></i>
+            </div>
+            <div class="closse groupe2">
+                <div class="carrd">
+
+                    <img class="ancien" src="./c.jpg" alt="imaage1">
+                    <div class="desc">
+                        <h2> Lit en bois </h2>
+                        <p style="color:rgb(133, 124, 124);"> 500 DT</p>
+
+                    </div>
+                </div>
+
+                <div class="carrd">
+
+                    <img class="ancien" src="./cc.jpg" alt="imaage2">
+                    <div class="desc">
+                        <h2> Lit-rosé</h2>
+                        <p style="color:rgb(133, 124, 124);"> 500 DT</p>
+                    </div>
+                </div>
+                <div class="carrd">
+
+                    <img class="ancien" src="./ccc.jpg" alt="imaage3">
+                    <div class="desc">
+
+                        <h2>Lit-Double </h2>
+                        <p style="color:rgb(133, 124, 124);"> 600 DT</p>
+                    </div>
+
+                </div>
+                <div class="carrd">
+
+                    <img class="ancien" src="./coif.jpg" alt="imaage4">
+                    <div class="desc">
+                        <h2> Coiffeuse Miroir</h2>
+                        <p style="color:rgb(133, 124, 124);"> 300 DT</p>
+                    </div>
+                </div>
+                <div class="carrd">
+
+                    <img class="ancien" src="./abatch.jpg" alt="imaage5">
+                    <div class="desc">
+                        <h2> Veilleuse</h2>
+                        <p style="color:rgb(133, 124, 124);">30 DT</p>
+                    </div>
+                </div>
+                <div class="carrd">
+
+                    <img class="ancien" src="./51EImxDnYNL._AC_SX615_SY462_.jpg" alt="imaage6">
+                    <div class="desc">
+                        <h2> Coiffeuse</h2>
+                        <p style="color:rgb(133, 124, 124);"> 150 DT</p>
+                    </div>
+
+                </div>
+                <div class="carrd">
+
+                    <img class="ancien" src="./512XC5LnqeL._AC_SL1000_.jpg" alt="imaage7">
+                    <div class="desc">
+                        <h2> Tabouret blanc</h2>
+                        <p style="color:rgb(133, 124, 124);"> 70 DT</p>
+                    </div>
+
+                </div>
+                <div class="carrd">
+
+                    <img class="ancien" src="./th (13).jpg" alt="imaage8">
+                    <div class="desc">
+                        <h2> Miroir</h2>
+                        <p style="color:rgb(133, 124, 124);"> 50DT</p>
+                    </div>
+
+                </div>
+                <div class="carrd">
+
+                    <img class="ancien" src="./abatc.jpg" alt="imaage9">
+                    <div class="desc">
+                        <h2> Abat Jour</h2>
+                        <p style="color:rgb(133, 124, 124);"> 60 DT</p>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </section>
+        <section>
+
+            <div class="borrd">
+                <h1 onclick="opengroupe4()" class="tt">Ancien meubles</h1>
+                <i class="fa-solid fa-down-long"></i>
+            </div>
+            <div class="closse groupe4">
+                <div class="carrd">
+                    <img class="ancien" src="./th (8).jpg" alt="imaage1">
+                    <div class="desc">
+                        <h2> Canapé 2 places</h2>
+                        <p style="color:rgb(133, 124, 124);"> 200 DT</p>
+                    </div>
+                </div>
+                <div class="carrd">
+                    <img class="ancien" src="./th (7).jpg" alt="imaage1">
+                    <div class="desc">
+                        <h2> buffet</h2>
+                        <p style="color:rgb(133, 124, 124);"> 150 DT</p>
+                    </div>
+                </div>
+                <div class="carrd">
+                    <img class="ancien" src="./th (9).jpg" alt="imaage1">
+                    <div class="desc">
+                        <h2> Canapé 3 places</h2>
+                        <p style="color:rgb(133, 124, 124);"> 300 DT</p>
+                    </div>
+                </div>
+                <div class="carrd">
+                    <img class="ancien" src="./th (6).jpg" alt="imaage1">
+                    <div class="desc">
+                        <h2> Canapé marron</h2>
+                        <p style="color:rgb(133, 124, 124);"> 200 DT</p>
+                    </div>
+                </div>
+                <div class="carrd">
+                    <img class="ancien" src="./th (2).jpg" alt="imaage1">
+                    <div class="desc">
+                        <h2> Lit bébé</h2>
+                        <p style="color:rgb(133, 124, 124);"> 100 DT</p>
+                    </div>
+                </div>
+                <div class="carrd">
+                    <img class="ancien" src="./th (3).jpg" alt="imaage1">
+                    <div class="desc">
+                        <h2> Veilleuse</h2>
+                        <p style="color:rgb(133, 124, 124);"> 30 DT</p>
+                    </div>
+                </div>
+                <div class="carrd">
+                    <img class="ancien" src="./buffet_ancien_chene_massif_1.jpg" alt="imaage1">
+                    <div class="desc">
+                        <h2> Buffet en bois</h2>
+                        <p style="color:rgb(133, 124, 124);"> 150 DT</p>
+                    </div>
+                </div>
+                <div class="carrd">
+                    <img class="ancien" src="./th (10).jpg" alt="imaage1">
+                    <div class="desc">
+                        <h2>Buffet </h2>
+                        <p style="color:rgb(133, 124, 124);"> 150 DT</p>
+                    </div>
+                </div>
+                <div class="carrd">
+                    <img class="ancien" src="./th (11).jpg" alt="imaage1">
+                    <div class="desc">
+                        <h2> Buffet blanc</h2>
+                        <p style="color:rgb(133, 124, 124);"> 150 DT</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="foooter">
+            <div>
+                <dfn onclick=" tapservices()" style="font-size:25px ;margin: 5px 0px 10px;"> Services</dfn>
+                <ul class="partt1">
+
+                    <li> Services et coaching déco</li>
+                    <li> Reformulation des meubles</li>
+
+                    <li> livraison </li>
+
+                </ul>
+            </div>
+            <div>
+                <dfn onclick=" tapmeubles()" style="font-size:25px ;margin: 5px 0px 10px;"> meubles</dfn>
+                <ul class=" partt2">
+
+                    <li> Séjour</li>
+                    <li> Chambre</li>
+                    <li> Ancien meubles</li>
+
+                </ul>
+            </div>
+            <div>
+                <dfn onclick=" tapsuiv()" style="font-size:25px ;margin: 5px 0px 10px;"> Suivez nous </dfn>
+                <ul class="partt3">
+
+                    <li><i class=" fa-brands fa-facebook"></i> Facebook</li>
+                    <li><i class="fa-brands fa-instagram"></i> Instagram</li>
+                    <li><i class="fa-brands fa-pinterest"></i> Pinterst</li>
+                </ul>
+            </div>
+
+
+        </section>
+
+</body>
+<script src="./java.js"></script>
+
+</html>
